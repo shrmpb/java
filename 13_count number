@@ -1,0 +1,29 @@
+class lab131
+{
+    public static void main(String args[])
+    {
+        int s = 0, i = 0, f = 0;
+
+        for(String x : args)
+        {
+            if(x.contains("."))
+                f++;
+            else
+            {
+                try
+                {
+                    Integer.parseInt(x);
+                    i++;
+                }
+                catch(Exception e)
+                {
+                    s++;
+                }
+            }
+        }
+
+        System.out.println("Strings = " +s);
+        System.out.println("Integers = " +i);
+        System.out.println("Floats = " +f);
+    }
+}
