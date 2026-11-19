@@ -1,0 +1,22 @@
+class Lab5
+{
+   public static void main(String[] args)
+   {
+      String st1="welcome";
+      String st2="java";
+      System.out.println("The String st1 is: "+st1);
+      System.out.println("The String st2 is: "+st2);
+      System.out.println("The length of String is: "+st1.length());
+      System.out.println("Character position is "+st1.indexOf('e'));
+      System.out.println("The String in uppercase: "+st1.toUpperCase());
+      System.out.println("The String in lowecase : "+st1.toLowerCase());
+      System.out.println("st1 is equal to st2: "+st1.equals(st2));
+      System.out.println("Character at an index of is ="+st1.charAt(3));
+      String st3=st1.substring(2,5);
+      System.out.println("Extracted substring is:"+st3);
+      System.out.println("After replacing l with r in St1 is: " +st1.replace('l','r'));
+      String st4=" Welcome Java ";
+      System.out.println("The string st4 is:" +st4.trim());
+      System.out.println("Concatenated string:"+st1.concat(st2));
+   }
+}
