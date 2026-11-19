@@ -1,0 +1,31 @@
+/ JAVA
+
+
+import java.applet.Applet;
+import java.awt.*;
+import java.util.StringTokenizer;
+/*<applet code="TokenDemo.class" width="300" height="200"> */
+public class lab18 extends Applet
+{
+   public void paint(Graphics g)
+   {
+      String s = "Java is very simple";
+      StringTokenizer st = new StringTokenizer(s);
+      int y = 50;
+      while(st.hasMoreTokens())
+      {
+         g.drawString(st.nextToken(), 50, y);
+         y = y + 30;
+      }
+   }
+}
+
+
+/ HTML
+
+<HTML>
+<Body>
+     <applet code="lab18.class" width=300 height=200>
+</applet>
+</Body>
+</HTML>
