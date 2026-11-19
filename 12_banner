@@ -1,0 +1,27 @@
+/ JAVA
+
+import java.applet.*;
+import java.awt.*;
+public class lab12 extends Applet
+{
+    public void paint(Graphics g)
+    {
+       g.setColor(Color.BLUE);
+       g.setFont(new Font("Arial", Font.BOLD, 30));
+       g.drawString("WELCOME TO AIMCA", 50, 60);
+    }
+}
+
+
+/ HTML
+
+
+<HTML>
+<Head>
+<TITLE>Human Face</Title>
+</HEAD>
+<Body>
+     <applet code="lab12.class" width=400 height=200>
+</applet>
+</Body>
+</HTML>
