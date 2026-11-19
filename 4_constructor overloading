@@ -1,0 +1,29 @@
+class student
+{
+    int a, b;
+    student(int n)
+    {
+        a=b=n;
+    }
+    student(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    int sum()
+    {
+        System.out.println("a=" +a +"\tb=" +b);
+        return(a+b);
+    }
+}
+
+class Testcon
+{
+    public static void main( String arg[])
+    {
+        student std1=new student(15);
+        System.out.println("sum=" +std1.sum());
+        student std2=new student(10,20);
+        System.out.println("sum=" +std2.sum());
+    }
+}
