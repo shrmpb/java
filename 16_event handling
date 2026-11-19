@@ -1,0 +1,35 @@
+/ JAVA
+
+
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
+public class lab16 extends Applet implements ActionListener
+{
+   Button b;
+
+   public void init()
+   {
+      b = new Button("Click Me");
+      add(b);
+      b.addActionListener(this);
+   }
+
+   public void actionPerformed(ActionEvent e)
+   {
+      showStatus("Button Clicked");
+   }
+}
+
+
+/ HTML
+
+<HTML>
+<Head>
+<TITLE>Human Face</Title>
+</HEAD>
+<Body>
+     <applet code="lab16.class" width=300 height=200>
+</applet>
+</Body>
+</HTML>
