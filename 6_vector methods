@@ -1,0 +1,13 @@
+import java.util.Vector;
+class Lab6
+{
+   public static void main(String[] args)
+   {
+      Vector v1=new Vector();
+      v1.addElement("AIMCA");
+      v1.addElement("Bhatkal");
+      System.out.println("The Vector v1 is: " +v1);
+      v1.removeElement("AIMCA");
+      System.out.println("The Vector v1 is: " +v1);
+   }
+}
