@@ -1,0 +1,28 @@
+class A
+{
+    int a=2, b=4;
+    public int addA()
+    {
+        return(a+b);
+    }
+}
+
+class B extends A
+{
+    int c=10;
+    public int addB()
+    {
+        return(a+b+c);
+    }
+}
+
+class Lab2si2
+{
+    public static void main(String[] args)
+    {
+        B b1=new B();
+        System.out.println("Sum of class A =" +b1.addA());
+        System.out.println("Sum of class B =" +b1.addB());
+
+    }
+}
