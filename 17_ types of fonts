@@ -1,0 +1,33 @@
+/ JAVA
+
+
+import java.applet.Applet;
+import java.awt.*;
+public class lab17 extends Applet
+{
+   public void paint(Graphics g)
+   {
+      g.setFont(new Font("Serif", Font.PLAIN, 20));
+      g.drawString("Serif Font", 50, 50);
+
+      g.setFont(new Font("SansSerif", Font.BOLD, 20));
+      g.drawString("Bold Font", 50, 90);
+
+      g.setFont(new Font("Monospaced", Font.ITALIC, 20));
+      g.drawString("Italic Font", 50, 130);
+   }
+}
+
+
+/ HTML
+
+
+<HTML>
+<Head>
+<TITLE>Human Face</Title>
+</HEAD>
+<Body>
+     <applet code="lab17.class" width=300 height=200>
+</applet>
+</Body>
+</HTML>
